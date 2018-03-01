@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null">
+
+    <!--底部菜单-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="修改密码"
+        android:textSize="18sp"
+        android:textColor="@color/colorAccent"
+        android:drawableLeft="@drawable/setting_change_pwd"
+        android:padding="10dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="清理缓存"
+        android:textSize="18sp"
+        android:textColor="@color/colorAccent"
+        android:drawableLeft="@drawable/setting_clear"
+        android:padding="10dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="安装更新"
+        android:textSize="18sp"
+        android:textColor="@color/colorAccent"
+        android:drawableLeft="@drawable/setting_update"
+        android:padding="10dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="关于我们"
+        android:textSize="18sp"
+        android:textColor="@color/colorAccent"
+        android:drawableLeft="@drawable/setting_about_us"
+        android:padding="10dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="安全退出"
+        android:textSize="18sp"
+        android:textColor="@color/colorAccent"
+        android:padding="10dp"
+        />
+
+</LinearLayout>

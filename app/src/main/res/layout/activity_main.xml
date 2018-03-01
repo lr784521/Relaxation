@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/top_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--顶部控件-->
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/Main_tooBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_top_bar_bg">
+
+                <TextView
+                    android:id="@+id/City_Address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="城市地址"
+                    android:textColor="@android:color/white" />
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/address_more" />
+
+                <android.support.v7.widget.SearchView
+                    android:layout_width="225dp"
+                    android:layout_height="38dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@android:color/white"
+                    android:queryHint="搜索游戏物品或者游戏名称"
+                    android:searchIcon="@drawable/search"></android.support.v7.widget.SearchView>
+
+                <ImageView
+                    android:id="@+id/main_top_scan"
+                    android:layout_width="30dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/scan"
+                    />
+            </android.support.v7.widget.Toolbar>
+        </LinearLayout>
+
+        <!--设计布局-->
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_mainshow_Fremage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/top_toolbar" />
+
+        <Gallery
+            android:id="@+id/gallery_movie"
+            android:layout_below="@id/vp_mainshow_Fremage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spacing="16dp"
+            />
+
+        <Gallery
+            android:layout_marginTop="5dp"
+            android:id="@+id/gallery_music"
+            android:layout_below="@id/gallery_movie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spacing="16dp"
+            />
+
+        <Gallery
+            android:layout_marginTop="5dp"
+            android:id="@+id/gallery_display"
+            android:layout_below="@id/gallery_music"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spacing="16dp"
+            />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="60dp"
+            android:layout_marginRight="15dp"
+            android:src="@android:drawable/ic_dialog_email" />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:tabIndicatorHeight="0dp" />
+
+
+    </RelativeLayout>
+        <!--headerLayout侧滑菜单顶部用户信息-->
+        <!--menu侧滑菜单中部功能菜单-->
+        <android.support.design.widget.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            app:headerLayout="@layout/userinfomenu"
+            app:menu="@menu/user_function_menu"
+            />
+
+</android.support.v4.widget.DrawerLayout>

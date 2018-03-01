@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_light"
+    >
+
+    <ImageView
+        android:id="@+id/user_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="start"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/simple_chat_head2" />
+
+</RelativeLayout>

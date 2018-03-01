@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="首页"  android:icon="@drawable/main_tab_sel_home"/>
+    <item android:title="分类" android:icon="@drawable/main_tab_sel_classify"/>
+    <item android:title="收藏" android:icon="@drawable/main_tab_sel_collect"/>
+    <item android:title="我" android:icon="@drawable/main_tab_sel_user"/>
+
+</menu>

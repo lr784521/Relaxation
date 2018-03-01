@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/ic_chat_black_24dp"
+        android:title="我的群组" />
+    <item
+        android:icon="@drawable/user_photo"
+        android:title="我的相册" />
+    <item
+        android:icon="@drawable/user_collection"
+        android:title="我的收藏" />
+    <item
+        android:icon="@drawable/user_action"
+        android:title="我参与的活动" />
+    <item
+        android:icon="@drawable/opinion"
+        android:title="意见反馈" />
+    <item
+        android:icon="@drawable/setting"
+        android:title="设置" />
+
+</menu>

@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="ad.relaxation.show_main_item_fragment.User_Fragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/user_bg">
+
+        <ImageView
+            android:id="@+id/user_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/simple_chat_head2" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="您还没有登陆！"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/user_credits_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_name"
+            android:layout_marginLeft="120dp"
+            android:text="积分:"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/user_credits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_name"
+            android:layout_toRightOf="@id/user_credits_name"
+            android:text="0"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/user_day_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_name"
+            android:layout_marginLeft="190dp"
+            android:text="天数:"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/user_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_name"
+            android:layout_toRightOf="@id/user_day_name"
+            android:text="0"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/user_login_register"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/user_day_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/user_button_style"
+            android:text="登陆/注册"
+            android:textColor="@android:color/white"
+
+            />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/user_function_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
