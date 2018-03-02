@@ -31,7 +31,7 @@ import butterknife.ButterKnife;
  * 5.设置适配器
  * 6.绑定组件
  * 7.设置选项卡标题和图标
- *
+ *...............
  */
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
