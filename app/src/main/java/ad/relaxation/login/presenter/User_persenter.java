@@ -13,7 +13,7 @@ import ad.relaxation.model.User;
 
 public class User_persenter {
     /**
-     * 抽象视图借口
+     * 抽象视图借口...
      */
     private Login_View loginView;
 
